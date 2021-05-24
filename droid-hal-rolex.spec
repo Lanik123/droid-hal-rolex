@@ -14,4 +14,30 @@
   #define WANT_ADRENO_QUIRKS 1 \
 %{nil}
 
+%define makefstab_skip_entries /dev/cpuctl /dev/bfqio /dev/stune /oem
+
+%define straggler_files \
+    /init.qcom.sh \
+    /init.qcom.usb.sh \
+    /bugreports \
+    /d \
+    /cache \
+    /file_contexts.bin \
+    /property_contexts \
+    /seapp_contexts \
+    /sdcard \
+    /selinux_version \
+    /service_contexts \
+    /vendor \
+    /charger \
+    /sepolicy \
+    /init.baseband.sh \
+    /init.class_main.sh \
+    /init.mdm.sh \
+    /init.qcom.class_core.sh \
+    /init.qcom.early_boot.sh \
+    /init.qcom.sensors.sh \
+    /init.qcom.syspart_fixup.sh \
+%{nil}
+
 %include rpm/dhd/droid-hal-device.inc
