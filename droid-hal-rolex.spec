@@ -8,6 +8,7 @@
 
 %define installable_zip 1
 %define droid_target_aarch64 1
+%define android_version_major 7
 
 %define android_config \
   #define WANT_ADRENO_QUIRKS 1 \
